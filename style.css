@@ -11,7 +11,7 @@ body{
 
 /** HEADER Y BARRA DE NAVEGACIÓN**/
 
-nav{
+header nav{
     display: flex;
     justify-content: flex-end;
     padding: 1.5% 8%;
@@ -19,7 +19,7 @@ nav{
     box-shadow: 0 10px 10px 10px rgba(112, 174, 193, 0.1);
     
 }
-nav a{
+header nav a{
     margin: 0 2%;
     text-decoration: none;
     color: #70aec1;
@@ -170,4 +170,61 @@ nav a{
 }
 .proyecto-portfolio img{
     width: 100%;
+}
+/*QUINTA SECCIÓN: CONTACTO-LADO IZQUIERDO */
+#contacto{
+    background-color: #cfd8db;
+    padding: 8% 10%;
+}
+.contacto-contenedor{
+    display: flex;
+    background-color: white;
+    padding: 5%;
+    border-radius: 10px;
+}
+.contactame{
+    width: 50%;
+}
+.contacto-contenedor h2{
+    font-size: 40px;
+    margin-bottom: 5%;
+}
+.contacto-iconos{
+    display: flex;
+    flex-direction: column;
+}
+.contacto-iconos a{
+    margin: 5% 3%;
+    text-decoration: none;
+    color: #5d7177;
+    display: flex;
+    align-items: center;
+}
+.contacto-iconos a i{
+    color: #70aec1;
+    font-size: 30px;
+    margin-right: 3%;
+}
+/*QUINTA SECCIÓN: CONTACTO-LADO DERECHO-FORMULARIO */
+.escribime{
+    width: 50%;
+}
+.flex-input{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.formulario-completar {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    margin: 0 3% 5% 0;
+}
+.formulario-completar input, textarea{
+    background-color: #e5edf0;
+    border: solid 1px #cfd8db;
+    padding: 10px 15px;
+    border-radius: 25px;
+    font-size: 16px;
+    color: #5d7177;
 }

@@ -67,10 +67,10 @@
     </section>
     <div class="cita">
       <i class="fa-solid fa-quote-right"></i>
-      <p class="cita-texto">
+      <blockquote class="cita-texto">
         La mejor vida no es la más duradera, sino más bien aquella que está
         repleta de buenas acciones.
-      </p>
+      </blockquote>
       <p class="cita-autor">Marie Curie</p>
     </div>
     <section id="mis-proyectos">
@@ -80,7 +80,7 @@
         voluptatum tenetur! Id, nesciunt?
       </p>
       <div class="proyectos-contenedor">
-        <a href="index.html"class="proyecto proyecto-portfolio">
+        <a href="index.html" class="proyecto proyecto-portfolio">
           <img
             src="proyecto-portfolio.png"
             alt="Imagen de mi proyecto: Portfolio"
@@ -89,27 +89,49 @@
         </a>
       </div>
     </section>
-    <!--<section id="contacto">
-      <article>
+  <section id="contacto">
+    <div class="contacto-contenedor">
+      <article class="contactame">
         <h2>Contactame</h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque quo
-          nobis voluptatum tenetur! Id, nesciunt? Modi quasi repudiandae quam
-          hic quo, qui cumque nam voluptates, ipsam, tempora eaque numquam
+          Lorem ipsum dolor sit amet consectetur <br> adipisicing elit. Eaque quo
+          nobis voluptatum <br> tenetur! Id, nesciunt? Modi quasi repudiandae <br>quam
+          hic quo, qui cumque nam voluptates, <br> ipsam, tempora eaque numquam
           eligendi.
         </p>
-        <div>
-          <i class="devicon-twitter-original"></i>
-          <i class="devicon-github-original"></i>
-          <i class="devicon-linkedin-plain"></i>
-          <i class="fa-solid fa-envelope"></i>
+        <div class="contacto-iconos">
+          <a href="https://github.com/Leilapena"><i class="devicon-github-original"></i> LeilaPena</a>
+          <a href="www.linkedin.com/in/leila-julieta-pena"><i class="devicon-linkedin-plain"></i>Leila Julieta Peña</a>
+          <a href="mailto:leilajulieta1999@gmail.com"><i class="fa-solid fa-envelope"></i>leilajulieta1999@gmail.com</a>
         </div>
       </article>
-      <article>
+      <article class="escribime">
         <h2>Escribime</h2>
+        <form>
+          <div class="flex-input">
+          <div class="formulario-completar">
+            <label for="nombre">Nombre *</label>
+            <input type="text" id="nombre" placeholder="p. ej: Leila">
+          </div>
+          <div class="formulario-completar">
+            <label for="apellido">Apellido *</label>
+            <input type="text" id="apellido" placeholder="p. ej: Peña">
+          </div>
+        </div>
+        <div class="formulario-completar">
+          <label for="email">Email *</label>
+          <input type="email" id="email" placeholder="p. ej: leilajulieta1999@gmail.com">
+        </div>
+        <div class="formulario-completar">
+          <textarea name="" id="" cols="30" rows="10" placeholder="Escriba un mensaje aquí"></textarea>
+        </div>
+        <div>
+          <button type="submit">Enviar</button>
+        </div>
+        </form>
       </article>
     </section>
-    <footer>
+    <!-- <footer>
       <nav>
         <a href="#presentacion">HOLA</a>
         <a href="#mis-conocimientos">CONOCIMIENTOS</a>
