@@ -17,7 +17,10 @@ header nav{
     padding: 1.5% 8%;
     align-items: center;
     box-shadow: 0 10px 10px 10px rgba(112, 174, 193, 0.1);
-    
+    position: fixed;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: white;
 }
 header nav a{
     margin: 0 1%;
