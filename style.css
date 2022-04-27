@@ -9,7 +9,7 @@ body{
     color: #5d7177;
 }
 
-/** HEADER Y BARRA DE NAVEGACIÓN**/
+/***************************************** HEADER Y BARRA DE NAVEGACIÓN*****************************************/
 
 header nav{
     display: flex;
@@ -29,7 +29,7 @@ header nav a{
     border-radius: 20px;
     padding: 1% 2%;
 }
-.contacto{
+.header-contacto{
     font-weight: bold;
 }
 header nav a:hover{
@@ -39,9 +39,9 @@ header nav a:hover{
 header nav a:active{
     box-shadow: 0px 0px 10px 2px rgba(112, 174, 193, 0.9);
 }
-/**PRIMERA SECCIÓN: PRESENTACIÓN**/
+/*****************************************PRIMERA SECCIÓN: PRESENTACIÓN*****************************************/
 
-.presentacion{
+#presentacion{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -82,7 +82,7 @@ header nav a:active{
 .presentacion-informacion a:active{
     background-color: #6abbd3;
 }
-/**SEGUNDA SECCIÓN: MIS CONOCIMIENTOS**/
+/****************************************SEGUNDA SECCIÓN: MIS CONOCIMIENTOS**************************************/
 
 #mis-conocimientos{
     background-color: #80c0d375;
@@ -100,13 +100,13 @@ header nav a:active{
     text-align: center;
     margin: 2%;
 }
-.contenedor-tarjetas{
+.contenedor-conocimientos{
     width: 100%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
-.tarjeta{
+.conocimientos-tarjeta{
     background-color: white;
     width: 200px;
     padding: 30px;
@@ -120,20 +120,20 @@ header nav a:active{
     border: solid 2px #cfd8db;
 
 }
-.tarjeta i{
+.conocimientos-tarjeta i{
     margin: 20% 0;
     font-size: 75px;
     width: 100%;
 }
-.tarjeta p{
+.conocimientos-tarjeta p{
     margin: 20% 0;
     font-weight: bold;
     font-size: 20px;
 }
-.tarjeta:hover{
+.conocimientos-tarjeta:hover{
     border: solid 2px #80bfd3;
 }
-/*TERCERA SECCIÓN: CITA */
+/*********************************************TERCERA SECCIÓN: CITA *********************************************/
 .cita{
     text-align: center;
     background-color: #70aec1;
@@ -150,7 +150,7 @@ header nav a:active{
 .cita-autor{
     font-size: 20px;
 }
-/*CUARTA SECCIÓN: PROYECTOS */
+/*******************************************CUARTA SECCIÓN: PROYECTOS *******************************************/
 #mis-proyectos{
     display: flex;
     flex-direction: column;
@@ -175,7 +175,7 @@ header nav a:active{
     text-decoration: none;
     color: #5d7177;
 }
-.proyecto{
+.proyecto-tarjeta{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -186,10 +186,10 @@ header nav a:active{
     padding: 2%;
     margin: 2%;
 }
-.proyecto p{
+.proyecto-tarjeta p{
     font-weight: 600;
 }
-.proyecto-portfolio img{
+.proyecto-tarjeta img{
     width: 100%;
 }
 .proyecto:hover{
@@ -198,7 +198,7 @@ header nav a:active{
 .proyecto:active{
     box-shadow: 0 0 10px 2px #80bfd3;
 }
-/*QUINTA SECCIÓN: CONTACTO-LADO IZQUIERDO */
+/***********************************QUINTA SECCIÓN: CONTACTO-LADO IZQUIERDO ***********************************/
 
 #contacto{
     background-color: #80c0d375;
@@ -210,7 +210,7 @@ header nav a:active{
     padding: 5%;
     border-radius: 10px;
 }
-.contactame{
+.contacto-contactame{
     width: 50%;
 }
 .contacto-contenedor h2{
@@ -243,8 +243,8 @@ header nav a:active{
 .contenedor-icono:hover a{
     color: #80bfd3;
 }
-/*QUINTA SECCIÓN: CONTACTO-LADO DERECHO-FORMULARIO */
-.flex-input{
+/*******************************QUINTA SECCIÓN: CONTACTO-LADO DERECHO-FORMULARIO *******************************/
+.flex-formulario{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -266,7 +266,7 @@ label{
     font-size: 16px;
     color: #5d7177;
 }
-.flex-input input{
+.flex-formulario input{
     width: 70%;
 }
 button{
@@ -289,7 +289,7 @@ button:hover{
 button:active{
     background-color: #6abbd3;
 }
-/*FOOTER*/
+/**************************************************FOOTER*************************************************/
 footer{
     background-color: #70aec1;
     padding: 5% 10%;
@@ -332,7 +332,15 @@ footer nav a:hover{
     border: solid white 1px;
 }
 
-/* MEDIA QUERIES */
+/********************************************* MEDIA QUERIES *********************************************/
+/* /tablets landscape/ */
+@media (min-width: 820px) and (max-width: 1024px){
+    .contacto-contenedor{
+        display: flex;
+        flex-direction: column;
+        text-align: start;
+    }
+}
 /* /tablets/ */
 @media (min-width: 480px) and (max-width: 819px){
 body{
@@ -340,7 +348,7 @@ body{
 header{
     display: none;
 }
-.presentacion{
+#presentacion{
     display: flex;
     flex-direction: column;
 }
@@ -362,5 +370,62 @@ footer nav{
 }
 /* /celulares/ */
 @media (min-width: 200px) and (max-width: 480px){
-    
+    header{
+        display: none;
+    }
+    p{
+        font-size: 12px;
+    }
+    #presentacion{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    #presentacion h1{
+        font-size: 40px;
+    }
+    #presentacion h2, #mis-conocimientos h2, .cita-texto, #mis-proyectos h2, .contacto-contenedor h2, .contenedor-icono a i{
+        font-size: 20px;
+    }
+    #presentacion a{
+        font-size: 13px;
+    }
+    .conocimientos-tarjeta{
+        width: 100px;
+    }
+    .conocimientos-tarjeta i{
+        font-size: 40px;
+    }
+    .conocimientos-tarjeta p{
+        font-size: 11px;
+    }
+    .cita i{
+        font-size: 60px;
+    }
+    .cita-autor{
+        margin-top: 20%;
+        font-size: 15px;
+    }
+    #mis-proyectos{
+        text-align: center;
+    }
+    .contacto-contenedor{
+        flex-direction: column;
+    }
+    .contenedor-icono a{
+        font-size: 9px;
+    }
+    .flex-formulario{
+        flex-direction: column;
+    }
+    .formulario-completar input, textarea, button, label{
+        font-size: 10px;
+    }
+    footer nav{
+        display: none;
+    }
+    .iconos-footer i{
+        font-size: 10px;
+        padding: 8px;
+    }
 }   
