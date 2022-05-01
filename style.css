@@ -90,6 +90,7 @@ header nav a:active{
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
 }
 
 #mis-conocimientos h2{
@@ -192,10 +193,10 @@ header nav a:active{
 .proyecto-tarjeta img{
     width: 100%;
 }
-.proyecto:hover{
+.proyecto-tarjeta:hover{
     border: solid 2px #80bfd3;
 }
-.proyecto:active{
+.proyecto-tarjeta:active{
     box-shadow: 0 0 10px 2px #80bfd3;
 }
 /***********************************QUINTA SECCIÓN: CONTACTO-LADO IZQUIERDO ***********************************/
@@ -369,7 +370,7 @@ footer nav{
 }
 }
 /* /celulares/ */
-@media (min-width: 200px) and (max-width: 480px){
+@media (min-width: 200px) and (max-width: 479px){
     header{
         display: none;
     }
