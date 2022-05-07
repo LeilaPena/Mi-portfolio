@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -43,16 +43,14 @@
       </article>
       <img
         src="undraw_dev_focus_re_6iwt.png"
-        alt="Imagen de una chica programando"
+        alt="Chica programando"
         class="presentacion-imagen"
       />
     </section>
     <section id="mis-conocimientos">
       <h2>Lo que estoy aprendiendo</h2>
       <p>
-        Lorem ipsum dolor sit amet consectetur <br />
-        adipisicing elit. Beatae eaque neque molestias <br />
-        consequuntur vel ab quas architecto.
+        En esta sección están los conocimientos que aprendí, <br> y a medida que vaya aprendiendo nuevos, los iré agregando.
       </p>
       <div class="contenedor-conocimientos">
         <div class="conocimientos-tarjeta">
@@ -99,53 +97,56 @@
         <a href="index.html" class="proyecto-tarjeta">
           <img
             src="proyecto-portfolio.png"
-            alt="Imagen de mi proyecto: Portfolio"
+            alt="Mi proyecto: Portfolio"
           />
-          <p>Portfolio</p>
+          <p aria-hidden="true">Portfolio</p>
         </a>
       </div>
     </section>
-  <section id="contacto">
+    <section id="contacto">
     <div class="contacto-contenedor">
       <article class="contacto-contactame">
         <h2>Contactame</h2>
         <p>
-          Lorem ipsum dolor sit amet <br> consectetur adipisicing elit. <br> Eaque quo
-          nobis voluptatum <br> tenetur! Id, nesciunt? Modi quasi <br>
-          eligendi.
+          Si estás interesado en contactarme, <br> lo podes hacer mediante LinkedIn, <br> mi mail o llenando el formulario. <br> Muchas gracias por mirar mi portfolio♥ 
         </p>
           <div class="contenedor-icono">
-          <a href="https://github.com/Leilapena"><i class="devicon-github-original"></i> LeilaPena</a></div>
-          <div class="contenedor-icono"><a href="https://www.linkedin.com/in/leila-julieta-pe%C3%B1a-752411165/"><i class="devicon-linkedin-plain"></i>LeilaJulietaPeña</a>
-          </div><div class="contenedor-icono"><a href="mailto:leilajulieta1999@gmail.com"><i class="fa-solid fa-envelope"></i>leilajulieta1999@gmail.com</a></div>
+            <a href="https://github.com/Leilapena" aria-label="Github"><i class="devicon-github-original"></i> LeilaPena</a>
+          </div>
+          <div class="contenedor-icono" >
+            <a href="https://www.linkedin.com/in/leila-julieta-pe%C3%B1a-752411165/" aria-label="LinkedIn"><i class="devicon-linkedin-plain"></i>LeilaJulietaPeña</a>
+          </div>
+          <div class="contenedor-icono" >
+            <a href="mailto:leilajulieta1999@gmail.com" aria-label="Correo Electrónico"><i class="fa-solid fa-envelope"></i>leilajulieta1999@gmail.com</a>
+          </div>
       </article>
       <article class="contacto-escribime">
         <h2>Escribime</h2>
         <form>
           <div class="flex-formulario">
-          <div class="formulario-completar">
-            <label for="nombre">Nombre *</label>
-            <input type="text" id="nombre" placeholder="p. ej: Leila">
+            <div class="formulario-datos">
+              <label for="nombre" aria-hidden="true">Nombre *</label>
+              <input type="text" id="nombre" placeholder="p. ej.: Leila">
+            </div>
+            <div class="formulario-datos">
+              <label for="apellido" aria-hidden="true">Apellido *</label>
+              <input type="text" id="apellido" placeholder="p. ej.: Peña">
+            </div>
           </div>
-          <div class="formulario-completar">
-            <label for="apellido">Apellido *</label>
-            <input type="text" id="apellido" placeholder="p. ej: Peña">
+          <div class="formulario-datos">
+            <label for="email" aria-hidden="true">Email *</label>
+            <input type="email" id="email" placeholder="p. ej.: leilajulieta1999@gmail.com">
           </div>
-        </div>
-        <div class="formulario-completar">
-          <label for="email">Email *</label>
-          <input type="email" id="email" placeholder="p. ej: leilajulieta1999@gmail.com">
-        </div>
-        <div class="formulario-completar">
-          <label for="mensaje">Mensaje *</label>
-          <textarea cols="30" rows="10" placeholder="Escriba un mensaje aquí"></textarea>
-        </div>
-        <div>
-          <button type="submit">Enviar</button>
-        </div>
+          <div class="formulario-datos">
+            <label for="mensaje" aria-hidden="true">Mensaje *</label>
+            <textarea cols="30" rows="10" placeholder="Escriba un mensaje aquí" id="mensaje"></textarea>
+          </div>
+          <div>
+            <button type="submit">Enviar</button>
+          </div>
         </form>
       </article>
-    </section>
+    </section> 
 <footer>
       <nav>
         <a href="#presentacion">HOLA</a>
@@ -154,9 +155,9 @@
         <a href="#contacto">CONTACTO</a>
       </nav>
       <div class="iconos-footer">
-        <a href="https://github.com/Leilapena"><i class="devicon-github-original"></i></a>
-        <a href="https://www.linkedin.com/in/leila-julieta-pe%C3%B1a-752411165/"><i class="devicon-linkedin-plain"></i></a>
-        <a href="mailto:leilajulieta1999@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+        <a href="https://github.com/Leilapena" ><i class="devicon-github-original"></i></a>
+        <a href="https://www.linkedin.com/in/leila-julieta-pe%C3%B1a-752411165/" aria-label="LinkedIn"><i class="devicon-linkedin-plain"></i></a>
+        <a href="mailto:leilajulieta1999@gmail.com" aria-label="Correo Electrónico"><i class="fa-solid fa-envelope"></i></a>
       </div>
         <p>Hecho con 💙 por Lei</p>
     </footer>
